@@ -9,7 +9,10 @@
   "author": "\"Pranay Kumar\"",
   "license": "ISC",
   "babel": {
-    "presets": ["env", "react"]
+    "presets": [
+      "env",
+      "react"
+    ]
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -24,6 +27,8 @@
     "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
   }
