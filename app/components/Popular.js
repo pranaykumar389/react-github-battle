@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import api       from '../utils/api';
 import PropTypes from 'prop-types';
+import Loading  from './Loading';
 
 const SelectedLanguage = props => {
     const languages = ['All', 'JavaScript', 'Ruby', 'Java', 'CSS', 'Python'];
@@ -101,7 +102,7 @@ export default class Popular extends Component {
                 activeTab={this.state.activeTab}
                 onSelect={this.updateLanguage} />
             {!this.state.repos 
-                ? <p>LOADING</p> 
+                ? <Loading />
                 : <RepoGrid repos={this.state.repos} />}
         </div>
       );
